@@ -1,0 +1,37 @@
+{
+  "name": "premium-screen-share",
+  "version": "1.2.9",
+  "description": "Toggle whether you want to show your game activity or not, without opening settings.",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "build": "replugged build plugin",
+    "watch": "replugged build plugin --watch",
+    "bundle": "replugged bundle plugin",
+    "release": "replugged release",
+    "check": "tsc --noEmit",
+    "prettier:check": "prettier ./src --check",
+    "eslint:check": "eslint ./src",
+    "prettier:fix": "prettier ./src --write",
+    "eslint:fix": "eslint ./src --fix",
+    "lint": "pnpm run prettier:check & pnpm run eslint:check & pnpm run check",
+    "lint:fix": "pnpm run prettier:fix & pnpm run eslint:fix"
+  },
+  "keywords": [],
+  "author": "Nanakusa",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.18.0",
+    "@types/react": "^18.2.23",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-dmitmel": "github:dmitmel/eslint-config-dmitmel",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^2.8.8",
+    "replugged": "^4.8.3",
+    "typescript": "^5.0.0"
+  }
+}
